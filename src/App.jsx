@@ -7,7 +7,7 @@ export default class App extends Component {
     super(props);
     this.state = {
       task: data,
-      selected: "name",
+      selected: "",
     };
   }
   render() {
@@ -27,27 +27,39 @@ export default class App extends Component {
     const onSelect = (e) => {
       this.setState({ selected: e.target.value });
     };
+
     return (
       <div className="container">
-        <h1>
+        <h3>
           <p className="header">CRUD PROJECT IN REACT JS BY CIVILLIAN_98</p>
-        </h1>
-        <input
-          className="search"
-          placeholder="Search"
-          type="text"
-          onChange={onSearch}
-        />
-        <select onChange={onSelect} name="" id="">
-          <option value="name">NAME</option>
-          <option value="status">STATUS</option>
-        </select>
-        <table className="table" border={1}>
+        </h3>
+        <div className="searcher">
+          <input
+            className="search"
+            placeholder="Search"
+            type="text"
+            onChange={onSearch}
+          />
+          <select className="selector" onChange={onSelect} name="" id="">
+            <option name="name" value="name">
+              NAME
+            </option>
+            <option name="status" value="status">
+              STATUS
+            </option>
+            <option name="age" value="age">
+              AGE
+            </option>
+          </select>
+        </div>
+
+        <table className="table">
           <thead>
             <tr>
               <th>ID</th>
               <th>NAME</th>
               <th>STATUS</th>
+              <th>AGE</th>
               <th>UPDATE</th>
               <th>DELETE</th>
             </tr>
@@ -59,6 +71,7 @@ export default class App extends Component {
                   <td>{index + 1}</td>
                   <td>{val.name}</td>
                   <td>{val.status}</td>
+                  <td>{val.age}</td>
                   <td>
                     <button>UPDATE</button>
                   </td>
