@@ -1,7 +1,7 @@
-const data = [
-  { id: 1, age: "24", name: "ABDULAZIZ", status: "student" },
-  { id: 2, age: "26", name: "Farrukh", status: "developer" },
-  { id: 3, age: "27", name: "ISLOM", status: "mentor" },
-  { id: 4, age: "26", name: "FAZLIDDIN", status: "developer" },
+ const data = [
+  { id: 1, name: "ABDULAZIZ", status: "developer" },
+  { id: 2, name: "Farrukh", status: "developer" },
+  { id: 3, name: "ISLOM", status: "mentor" },
+  { id: 4, name: "FAZLIDDIN", status: "developer" },
 ];
-export default data;
+export default data
