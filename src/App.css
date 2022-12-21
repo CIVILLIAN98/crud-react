@@ -1,0 +1,23 @@
+* {
+  text-align: center;
+}
+.container {
+  width: 90%;
+  height: 400px;
+  margin: 200px auto;
+}
+body {
+  background: linear-gradient(45deg, yellow, purple);
+}
+.table {
+  margin: 0 auto;
+  background-color: grey;
+}
+.header:hover {
+  background-color: rgb(8, 7, 9);
+  color: rgb(160, 155, 155);
+}
+.header {
+  transition: all 2s;
+  border-radius: 15px;
+}
