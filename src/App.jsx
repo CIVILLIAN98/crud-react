@@ -7,7 +7,7 @@ export default class App extends Component {
     super(props);
     this.state = {
       task: data,
-      selected: "",
+      selected: "name",
     };
   }
   render() {
