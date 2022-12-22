@@ -12,7 +12,6 @@ export default class App extends Component {
   }
   render() {
     const OnDelete = (id) => {
-      console.log(id, "id");
       const res = this.state.task.filter((val) => val.id !== id);
       this.setState({ task: res });
     };
