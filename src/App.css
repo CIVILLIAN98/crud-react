@@ -2,10 +2,12 @@
   text-align: center;
 }
 .container {
-  width: 50%;
+  width: 80%;
   border-radius: 15px;
-  margin: 200px auto;
+  margin: 0 auto;
+  margin-top: 100px;
   background-color: white;
+  padding-bottom: 5px;
 }
 body {
   background: linear-gradient(45deg, yellow, purple);
@@ -14,21 +16,47 @@ body {
   margin: 0 auto;
 }
 .header:hover {
-  background-color: rgb(8, 7, 9);
-  color: rgb(160, 155, 155);
+  background-color: gold;
+  color: rgb(198, 12, 255);
 }
 .header {
-  transition: all 2s;
+  transition: all 1s;
   border-radius: 15px;
 }
 .searcher {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .search {
-  width: 100%;
+  width: 60%;
 }
 table {
   width: 100%;
+}
+.add-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px 0;
+}
+.adder {
+  width: 27%;
+  height: 25px;
+}
+.adder-btn {
+}
+.test {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.edit-age {
+  width: 50px;
+}
+.edit {
+  width: 120px;
 }
